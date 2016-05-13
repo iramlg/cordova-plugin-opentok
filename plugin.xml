@@ -14,7 +14,6 @@
       <config-file parent="/*" target="AndroidManifest.xml" mode="merge">
           <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
           <uses-permission android:name="android.permission.CAMERA" />
-          <uses-permission android:name="android.permission.RECORD_VIDEO" />
           <uses-permission android:name="android.permission.RECORD_AUDIO" />
           <application android:hardwareAccelerated="true" />
       </config-file>
