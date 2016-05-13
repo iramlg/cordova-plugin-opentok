@@ -9,6 +9,17 @@
     <license>Apache 2.0</license>
     <keywords>opentok,tokbox</keywords>
 
+    <!-- android -->
+    <platform name="android">
+      <config-file parent="/*" target="AndroidManifest.xml" mode="merge">
+          <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+          <uses-permission android:name="android.permission.CAMERA" />
+          <uses-permission android:name="android.permission.RECORD_VIDEO" />
+          <uses-permission android:name="android.permission.RECORD_AUDIO" />
+          <application android:hardwareAccelerated="true" />
+      </config-file>
+    </platform>
+
     <!-- ios -->
     <platform name="ios">
       <hook type="before_plugin_install" src="scripts/downloadiOSSDK.js" />
