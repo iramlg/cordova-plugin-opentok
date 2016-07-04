@@ -1,9 +1,11 @@
 Cordova Plugin for OpenTok iOS
 ===
 
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/songz/cordova-plugin-opentok?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 Weave video chat into your web (and now mobile!) application.
+
+* this plugin is a fork from [Chendo](https://github.com/chendo/cordova-plugin-opentok) repository and have base from [Songz](https://github.com/songz/cordova-plugin-opentok) original plugin, both have been deprecated so I did my uppdates and updated iOS plugin to version 2.8.3
+
+
 
 ## Using Cordova CLI
 Make sure You have Cordova 3.5.0 or greater installed. If you haven't, view [Cordova instructions](http://cordova.apache.org/docs/en/3.5.0/guide_cli_index.md.html) Page.  
@@ -16,7 +18,7 @@ Clone this repo to get the source code for OpenTok's Cordova plugin
 
 2. Install OpenTok plugin into your app:
 `cd my-app`  
-`cordova plugin add https://github.com/songz/cordova-plugin-opentok/`  
+`cordova plugin add https://github.com/iramlg/cordova-plugin-opentok/`  
 > Plugin already exists? To remove OpenTokPlugin: `cordova plugin remove com.tokbox.cordova.opentok`
 
 3a. For **Android Apps**, add Android platform into your cordova app
@@ -24,7 +26,7 @@ Clone this repo to get the source code for OpenTok's Cordova plugin
 
 3b. For **iOS Apps**, add iOS platform into your cordova app  
 `cordova platform add ios`  
-  iOS deloyment, as of March 14, needs additional setup. See [FAQ/Troubleshoot](https://github.com/songz/cordova-plugin-opentok#faq-troubleshoot-guide).
+  iOS deloyment, as of March 14, needs additional setup. See [FAQ/Troubleshoot](https://github.com/iramlg/cordova-plugin-opentok#faq-troubleshoot-guide).
 
 4. Edit your code in the created `www` folder
 
@@ -33,8 +35,6 @@ Clone this repo to get the source code for OpenTok's Cordova plugin
 
 6. To deploy your app to your iOS device:  
 > As of 1/17/2014, you cannot deploy to device with Cordova CLI for iOS apps. You need to first prepare you iOS app: `cordova prepare iOS`  
-> Next, open the project in xcode and run it on device: `open platforms/ios/HelloWorld.xcodeproj`
-
 
 ---
 
@@ -81,6 +81,10 @@ Have Fun!
 ----
 
 ## Updates:
+### July 01 2016 - 
+* Upgraded to v2.8.3 for iOS SDK.  -iramlg
+
+
 ### April 15 - 
 * fix [issue 22](https://github.com/songz/cordova-plugin-opentok/issues/22) for sessionConnected callback  
 * fix [issue 6](https://github.com/songz/cordova-plugin-opentok/issues/6) add connectionCreated and Destroyed events  
